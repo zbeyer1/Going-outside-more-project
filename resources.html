@@ -1,76 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bootstrap Demo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outdoor Skills & Survival Resource Database</title>
+    <style>
+        
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+            margin: 0; 
+            line-height: 1.6;
+            background-color: #aed581;
+            color: #333;
+            padding-top: 60px; 
+            box-sizing: border-box; 
+        }
+        h1, h2, h3 {
+            color: #2e7d32; 
+        }
+        a {
+            text-decoration: none;
+            color: #1976D2;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
 
- 
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
-    crossorigin="anonymous"
-  />
+        
+        nav {
+            background-color: #558B2F; 
+            color: #fff;
+            padding: 15px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100; 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        nav a {
+            color: #fff;
+            margin-right: 20px;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #38661c;
+            text-decoration: none;
+        }
+        nav a:last-child {
+            margin-right: 0;
+        }
+
+        
+        .resource-section {
+            background-color: #f9fbe7; 
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .resource-section h2 {
+            margin-top: 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #8BC34A; 
+        }
+        .resource-list {
+            list-style: none;
+            padding: 0;
+        }
+        .resource-list li {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .resource-list li:last-child {
+            border-bottom: none;
+        }
+        .resource-list h3 {
+            margin-top: 0;
+            color: #388E3C; 
+        }
+
+        
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            margin: 10px 0;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #e8f5e9; 
+            color: #757575;
+            margin-top: 30px;
+            border-top: 1px solid #c8e6c9;
+        }
+    </style>
 </head>
 <body>
+    <nav>
+        <a href="#essential-camping">Essential Camping Skills</a>
+        <a href="#outdoor-survival">Outdoor Survival Skills</a>
+        <a href="#gear-guides">Gear Guides & Reviews</a>
+        <a href="#safety-preparedness">Safety & Preparedness</a>
+    </nav>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Home</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-    
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              
-              <li class="nav-item">
-                <a class="nav-link" href="aboutus.html">About Us</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  links
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="resources.html">resources 1</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-            
-            </ul>
-    
-            
-          </div>
-        </div>
-      </nav>
+    <div class="resource-section" id="essential-camping">
+        <h2>Essential Camping Skills</h2>
+        <ul class="resource-list">
+            <li>
+                <h3>Setting Up Camp</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qhiz11fREzo?si=WRjU2xO5AyepKnkm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </li>
+            <li>
+                <h3>Campfire Basics & Safety</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0O3Bj8JFcTc?si=HAvd5O6W71LOCGjB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </li>
+            <li>
+                <h3>Navigation (Map & Compass Basics)</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/U8tD0EjjWq8?si=Gn37w-VY9Y3JnAFx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </li>
+            <li>
+                <h3>Leave No Trace Principles</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Rpq01rO9ZR0?si=Qj5GxIwbTCDzTFmd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </li>
+            <li>
+                <h3>Camp Cooking Fundamentals</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Kr0sL51JZSU?si=gpp5-ftwL-mVWUOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </li>
+        </ul>
+    </div>
 
-  <div class="container mt-5">
-    resources
+    <div class="resource-section" id="outdoor-survival">
+        <h2>Outdoor Survival Skills</h2>
+        <ul class="resource-list">
+            <li>
+                <h3>Finding and Purifying Water</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Kb_6eXF8kVE?si=n9YwRhLSsw4Mue9m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </li>
+            <li>
+                <h3>Building a Basic Survival Shelter</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MOSatge9Ilo?si=aTjzI1satDWEq3hn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </li>
+            <li>
+                <h3>Basic First Aid for Wilderness Emergencies</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mYWmUsTHLKo?si=H7wOhq67M3ahJHJV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </li>
+            <li>
+                <h3>Signaling for Help</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4BHi5lBYwro?si=YwcOqTZbSaTRVt-d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </li>
+            <li>
+                <h3>Identifying Edible and Non-Edible Plants (Caution Advised!)</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/RJ7CCoT8ag0?si=kpesPRK_4TE8B9YN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <p><strong>Important:</strong> Always exercise extreme caution when identifying and consuming wild plants. Misidentification can be dangerous or fatal. Consult with expert guides and resources before attempting to eat anything you find in the wild.</p>
+            </li>
+        </ul>
+    </div>
 
+    <div class="resource-section" id="gear-guides">
+        <h2>Gear Guides & Reviews</h2>
+        <ul class="resource-list">
+            <li>
+                <h3>Choosing the Right Tent for Your Needs</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EhxQhLghMeQ?si=j5BgXbc47SMseuye" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <p>Learn more at: <a href="https://www.rei.com/learn/expert-advice/family-base-camping-tent.html" target="_blank" class="resource-link">How to Choose the Right Tent</a></p>
+            </li>
+            <li>
+                <h3>Choosing the Right Sleeping Bag</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/CbxAW45dUPY?si=1-_0oqvTzS-e-Otu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <p>Learn more at: <a href="https://www.rei.com/learn/expert-advice/sleeping-bag.html" target="_blank" class="resource-link">How to Choose the Right Sleeping Bag</a></p>
+            </li>
+            <li>
+                <h3>Headlamps and Flashlights: Which is Best for You?</h3>
+                <p><a href="https://www.rei.com/learn/expert-advice/best-headlamps.html" target="_blank" class="resource-link">Best Headlamps 2025</a></p>
+                <p><a href="https://www.nytimes.com/wirecutter/reviews/best-flashlight/" target="_blank" class="resource-link">Best Flashlights 2025</a></p>
+            </li>
+            <li>
+                <h3>Backpacking Stove Comparison</h3>
+                <p><a href="https://www.outdoorgearlab.com/topics/camping-and-hiking/best-camping-stove" target="_blank" class="resource-link">The 4 Best Camping Stoves 2025</a></p>
+            </li>
+            <li>
+                <h3>Water Filter and Purifier Reviews</h3>
+                <p><a href="https://www.outdoorgearlab.com/topics/camping-and-hiking/best-backpacking-water-filter" target="_blank" class="resource-link">The 4 Best Camping Stoves 2025</a></p>
+            </li>
+        </ul>
+    </div>
 
+    <div class="resource-section" id="safety-preparedness">
+        <h2>Safety & Preparedness</h2>
+        <ul class="resource-list">
+            <li>
+                <h3>Wildlife Awareness and Safety</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YDyIwyU3FvY?si=Jf7O3oGZyxpu4c-J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </li>
+            <li>
+                <h3>Weather Preparedness for Outdoor Activities</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/GEzQS3G-scs?si=PRbbr616PkdM_3Np" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </li>
+            <li>
+                <h3>Building a Comprehensive First Aid Kit for Camping</h3>
+                <p><a href="https://www.rei.com/learn/expert-advice/first-aid-checklist.html" target="_blank" class="resource-link">First Aid Kit Checklist</a></p>
+            </li>
+            <li>
+                <h3>Emergency Communication Devices (Satellite Communicators, etc.)</h3>
+                <p><a href="https://www.outdoorgearlab.com/topics/camping-and-hiking/best-personal-locator-beacon" target="_blank" class="resource-link">The 5 Best Satellite Communicators of 2025</a></p>
+            </li>
+            <li>
+                <h3>How to Create a Trip Plan and Share it</h3>
+                <p><a href="https://cabotcreamery.com/blogs/how-to-guide/7-ways-prepare-camping-trip" target="_blank" class="resource-link">How to Plan Your Camping Trip</a></p>
+            </li>
+        </ul>
+    </div>
 
-
-
-
-
-
-
-
-    
-  </div>
-
-  
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-    crossorigin="anonymous">
-  </script>
+    <footer>
+        <p>© 2025 Capstone</p>
+    </footer>
 </body>
 </html>
