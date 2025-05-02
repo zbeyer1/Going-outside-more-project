@@ -1,76 +1,131 @@
+!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bootstrap Demo</title>
-
- 
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
-    crossorigin="anonymous"
-  />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Camp Site</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #e8f5e9; /* light green forest color */
+      font-family: 'Segoe UI', sans-serif;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    }
+    .team-card {
+      background-color: #ffffff;
+      border: 2px dashed #4caf50;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .team-card:hover {
+      transform: scale(1.05);
+    }
+    .team-card img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+    footer {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+  </style>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Home</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-    
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              
-              <li class="nav-item">
-                <a class="nav-link" href="aboutus.html">About Us</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  links
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="resources.html">resources 1</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-            
-            </ul>
-    
-            
-          </div>
-        </div>
-      </nav>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">CampSite Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html">Our Camp Site</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resources.html">Resources</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
+  <!-- Hero Header -->
+  <header>
+    <h1 class="display-3">🏕️ Welcome to Our Camp Site!</h1>
+    <p class="lead">Where teamwork builds the strongest tents... and the coolest websites!</p>
+  </header>
+
+  <!-- Team Section -->
   <div class="container mt-5">
-    about us
+    <div class="row text-center">
+      
+      <!-- Zach B -->
+      <div class="col-md-4 mb-4">
+        <div class="team-card">
+          <img src="zach-b.jpeg" alt="Zach B">
+          <h3>Zach B</h3>
+          <p><strong>Trail Guide</strong></p>
+          <p> Zach B. created the base layout, structured key pages, and manages version control.</p>
+        </div>
+      </div>
 
+      <!-- Alex -->
+      <div class="col-md-4 mb-4">
+        <div class="team-card">
+          <img src="me.jpeg" alt="Alex">
+          <h3>Alex</h3>
+          <p><strong>Camp Designer</strong></p>
+          <p> Alex designed and developed the About Us page with Bootstrap and JavaScript, focusing on layout, interactivity, and visual styling.</p>
+        </div>
+      </div>
 
+      <!-- Zach S -->
+      <div class="col-md-4 mb-4">
+        <div class="team-card">
+          <img src="zach-s.jpeg" alt="Zach S">
+          <h3>Zach S</h3>
+          <p><strong>Resource Gatherer</strong></p>
+          <p>Zach S. developed the resource database and backend structure for the project. He focused on search functionality and data management.</p>
+        </div>
+      </div>
 
-
-
-
-
-
-
-
-    
+    </div>
   </div>
 
-  
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-    crossorigin="anonymous">
-  </script>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Our Capstone Camp Site – Built by Alex, Zach B., and Zach S.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+    
