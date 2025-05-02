@@ -2,76 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bootstrap Demo</title>
-
- 
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
-    crossorigin="anonymous"
-  />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home | Capstone Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
-  
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">Home</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link" href="aboutus.html">About Us</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              links
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="resources.html">resources 1</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="resources.html">Resources</a>
           </li>
-        
         </ul>
-
-        
       </div>
     </div>
   </nav>
 
-  <div class="container mt-5">
-    hello
+  <!-- Hero Section -->
+  <div class="container text-center mt-5">
+    <h1 class="display-3 text-primary mb-4">Welcome to Our Capstone Project!</h1>
+    <p class="lead mb-5">We’re a team from Oakland Technical High School creating tech-based solutions for mental health and outdoor connection.</p>
 
-
-
-
-
-
-
-
-
-
-
+    <!-- CTA Buttons -->
+    <div class="d-flex justify-content-center gap-3">
+      <a href="aboutus.html" class="btn btn-outline-primary btn-lg">Meet the Team</a>
+      <a href="resources.html" class="btn btn-primary btn-lg">Explore Resources</a>
+    </div>
   </div>
 
-  
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-    crossorigin="anonymous">
-  </script>
+  <!-- Optional Info Section -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <h3>Our Mission</h3>
+        <p>We aim to combine technology and nature-based approaches to improve mental wellness in our community, especially after the challenges of the pandemic.</p>
+      </div>
+      <div class="col-md-6 mb-4">
+        <h3>Why It Matters</h3>
+        <p>Nature access, tech support, and community connections are vital for mental health. We’re here to make these tools more accessible to everyone.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p class="mb-0">&copy; 2025 Our Capstone Team – Alex, Zach B., and Zach S.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
