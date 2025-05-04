@@ -1,0 +1,12 @@
+<div class="col-12 mt-4 p-4 rounded" style="background-color: #f1f8e9; border-left: 5px solid #66bb6a;">
+  <h3>Nature & Mental Wellness</h3>
+  <p>Mental health challenges like anxiety, depression, and stress affect millions of people, especially in the wake of social isolation, academic pressure, and uncertainty in our world. While therapy and technology can help, reconnecting with nature offers a powerful, often overlooked support system.</p>
+  <p>Spending time outdoors has been shown to improve emotional well-being, reduce negative thought patterns, and enhance overall brain function. Whether it’s a short walk, a camping trip, or simply being around trees, nature has real psychological benefits.</p>
+  <ul>
+    <li>Being in green spaces lowers stress hormone levels and heart rate.</li>
+    <li>Outdoor light supports better sleep and mood regulation.</li>
+    <li>Nature can help restore focus, especially for those with ADHD or anxiety.</li>
+  </ul>
+  <p>That’s why our project is built on combining mental health awareness with outdoor access — helping people build resilience, confidence, and connection through the natural world.</p>
+  <a href="resources.html#safety-preparedness" class="btn btn-success mt-2">Explore Outdoor Wellness Tools</a>
+</div>
