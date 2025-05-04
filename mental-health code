@@ -10,3 +10,10 @@
   <p>That’s why our project is built on combining mental health awareness with outdoor access — helping people build resilience, confidence, and connection through the natural world.</p>
   <a href="resources.html#safety-preparedness" class="btn btn-success mt-2">Explore Outdoor Wellness Tools</a>
 </div>
+
+
+
+
+"<div class="col-12 mt-4 p-4 rounded" style="background-color: #f1f8e9; border-left: 5px solid #66bb6a;">
+  <!-- ...same content inside here... -->
+</div>"
