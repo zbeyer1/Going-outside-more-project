@@ -1,2 +1,2 @@
-# Going-outside-more-project
+# Camp-Site-Capstone-Project
 Zach, Zach, and Alex project
